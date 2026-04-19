@@ -1,0 +1,28 @@
+opencollection: 1.0.0
+
+info:
+  name: Fastify API
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: x-dev-auth-secret
+      value: "{{DEV_AUTH_SECRET}}"
+    - name: x-dev-auth-user-id
+      value: "{{DEV_AUTH_USER_ID}}"
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

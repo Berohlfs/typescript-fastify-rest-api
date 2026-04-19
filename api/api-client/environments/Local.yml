@@ -1,0 +1,8 @@
+name: Development
+variables:
+  - secret: true
+    name: DEV_AUTH_SECRET
+  - secret: true
+    name: DEV_AUTH_USER_ID
+  - name: API_URL
+    value: http://localhost:8000
