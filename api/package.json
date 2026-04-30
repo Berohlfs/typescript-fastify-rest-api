@@ -1,7 +1,7 @@
 {
-  "name": "devnouveau-api",
+  "name": "fastify-api",
   "version": "1.0.0",
-  "description": "RESTful API for the Dev Nouveau education platform.",
+  "description": "Fastify RESTful API.",
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch --env-file=.env src/server.ts",
